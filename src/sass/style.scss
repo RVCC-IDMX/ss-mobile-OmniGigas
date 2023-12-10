@@ -1,1 +1,133 @@
+/* reset */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+}
+
+img, picture, svg {
+    display: block;
+    max-width: 100%;
+}
+
+
 /* main */
+
+body {
+    font-family: 'Helvetica';
+    background: hsl(50, 100%, 90%);
+}
+
+ul {
+    list-style-type: none;
+}
+
+header {
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: bolder;
+}
+
+h1 {
+    font-size: 1.5rem;
+}
+
+svg {
+    margin: 0 auto;
+    width: 10%;
+}
+
+nav ul{
+    background: hsl(50, 100%, 70%);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    justify-content: center;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1.2rem;
+}
+
+#main {
+    margin: 1rem auto;
+    padding: 1rem;
+    border-radius: 25px;
+    background: hsl(50, 0%, 90%);
+    max-width: 140ch;
+
+}
+
+#main h2 {
+    background: hsl(50, 0%, 20%);
+    color: hsl(50, 0%, 100%);
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 0.5rem;
+    margin: 1.3rem auto;
+}
+
+p {
+    padding: 0.2rem 0;
+    text-indent: 3ch;
+}
+
+#about .container ul {
+    border: 1px solid black;
+    max-height: 200px;
+    overflow: scroll;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 0.5rem;
+    margin: 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    background-color: #e5e5f7;
+    opacity: 0.8;
+    background: linear-gradient(135deg, #bfc0cd55 25%, transparent 25%) 
+    -10px 0/ 20px 20px, linear-gradient(225deg, #bfc0cd 25%, transparent 25%) 
+    -10px 0/ 20px 20px, linear-gradient(315deg, #bfc0cd55 25%, transparent 25%) 
+    0px 0/ 20px 20px, linear-gradient(45deg, #bfc0cd 25%, #e5e5f7 25%) 
+    0px 0/ 20px 20px;
+}
+
+#contribute .container ol {
+    padding: 1rem;
+}
+
+aside {
+    text-align: center;
+    margin: 1rem auto;
+}
+
+.page-footer .container svg {
+    width: 15px;
+}
+
+.page-footer {
+    background: hsl(50, 100%, 70%);
+    padding: 1rem;
+    max-width: 140ch;
+}
+
+.page-footer p {
+    text-indent: 0%;
+}
+
+.page-footer .container ul li a svg {
+    display: none;
+}
+
+.page-footer .container ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    gap: 1rem;
+    padding-bottom: 1rem;
+}

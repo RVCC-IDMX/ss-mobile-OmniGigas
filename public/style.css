@@ -33,12 +33,12 @@ ul {
 
 header {
   text-align: center;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-weight: bolder;
 }
 
 h1 {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
 }
 
 svg {
@@ -114,6 +114,7 @@ aside {
 
 .page-footer {
   background: hsl(50deg, 100%, 70%);
+  margin: 1rem auto;
   padding: 1rem;
   max-width: 140ch;
 }
